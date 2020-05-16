@@ -10,14 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Form {
-            Section {
-                Text("Hello, World!")
+        NavigationView {
+            Form {
+                Section {
+                    Text("Hello, World!")
+                }
             }
-            Section {
-                Text("Hello, mother!")
-                Text("Hello, father!")
-            }
+            .navigationBarTitle("SwiftUI")
         }
     }
 }
@@ -25,5 +24,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
+    }
 }
